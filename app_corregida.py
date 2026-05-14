@@ -152,7 +152,7 @@ def archivo():
         with open("uploads/" + filename, "r") as f:
             content = f.read()
         return f"<pre>{escape(content)}</pre>"
-    except:
+    except Exception:
         return "Archivo no encontrado"
 
 
